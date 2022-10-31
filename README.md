@@ -1,6 +1,6 @@
-# Markdown editor environment
+# Markdown editor environment for vscode
 
-This repo is a markdown editor environment template. The purpose is to compose documents in `md` format and then convert to `docx`, `html`, or `pdf` using the `vscode-pandoc` extension. The setup mainly follows [this tutorial](https://thisdavej.com/build-an-amazing-markdown-editor-using-visual-studio-code-and-pandoc/).
+This is a markdown editor environment template for vscode. The idea is to have a template environment for composing documents in `md` format and then convert to `docx`, `html`, or `pdf` using the `vscode-pandoc` extension. The setup mainly follows [this tutorial](https://thisdavej.com/build-an-amazing-markdown-editor-using-visual-studio-code-and-pandoc/).
 
 ## Setup
 
