@@ -1,6 +1,9 @@
 {
+// see https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
     "default": true,
     "MD007": false,
     "no-hard-tabs": false,
     "line-length": false
+    // mgc if line-length is true then the linter will complain about lines > 80 chars
 }

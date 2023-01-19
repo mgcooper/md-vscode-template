@@ -6,7 +6,8 @@
         "strings": "off",
         "other": "off"
     },
-    "pandoc.htmlOptString": "-s -f gfm -t html5 --css=css/style0.css",
+    "pandoc.htmlOptString": "--standalone --from gfm --to html5 --css=css/style0.css",
+    "pandoc.pdfOptString": "--to html", // use html as an intermediate format
     "cSpell.words": [
         "pandoc"
     ],
@@ -14,3 +15,20 @@
         "css/style0.css"
     ]
 }
+
+    // for pandoc string composition see: https://pandoc.org/MANUAL.html
+    // to see the pdflatex template try: pandoc -D latex | less
+    // to use xelatex (apparently more robust than pdflatex), add --pdf-engine=xelatex to pdfOptString
+    // to add a toc, use --toc
+    // to troubleshoot the pdf, use something like "-s -o test.tex" for a standalone .tex file then send it to pdflatex: "pdflatex test.tex"
+    // options I tried to fix the title complaint:
+    
+    // "pandoc.htmlOptString": "--standalone --from gfm --to html5  --metadata title="" --css=css/style0.css",
+
+    // "pandoc.htmlOptString": "--standalone --from markdown_strict --to html5  --metadata title="..." --css=css/style0.css",
+
+    // "pandoc.htmlOptString": "--standalone --from gfm --to html5 --metadata pagetitle= --css=css/style0.css",
+
+    // note: --listings on the pdf string might alos fix the wrap lines issue but for now, -t html works
+
+    // "pandoc.pdfOptString": "--pdf-engine=xelatex", // code wrapping doesn't work
