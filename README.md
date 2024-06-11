@@ -6,7 +6,9 @@ This template provides a [markdown](https://hiltmon.com/blog/2012/02/20/the-mark
 
 This example assumes that you have forked this template and (optionally) cloned it to your local environment. If not, see [Setup](#setup) below. Once you have done that, you can create a new local `md` editor environment that will also exist as a public repo on your github.com account in one line. First, navigate to the local directory where you want to create your new repo, just as though you were cloning a remote repo. Then try:
 
-`>> gh repo create <your-new-repo> --public --template=<your-github-username>/<this-repo>`
+```sh
+gh repo create <your-new-repo> --public --template=<your-github-username>/<this-repo>
+```
 
 So long as you have the `gh` [cli installed](https://cli.github.com), that one-liner should clone this template as it exists on your github.com account into `<your-new-repo>` in your local environment and create an upstream public remote on your github.com account.
 
@@ -30,7 +32,12 @@ Once you have a working copy of this template, feel free to use your Git hooks p
     - Press Enter or click the cloud icon to install it
     - Restart Visual Studio Code if prompted
 
-- Edit the `css/`, `.markdownlint.json`, and `.vscode/settings.json` files to your liking. I followed the tutorial and used [this css style sheet](https://benjam.info/panam/styling.css) from [here](https://benjam.info/panam/) as a starting point and then changed the code font color to black and removed the italics for level 2 subheading.
+- Edit the following to your liking
+  
+  - `css/`
+  - `.markdownlint.json`
+  - `.vscode/settings.json`
+  - I followed the tutorial and used [this css style sheet](https://benjam.info/panam/styling.css) from [here](https://benjam.info/panam/) as a starting point and then changed the code font color to black and removed the italics for level 2 subheading.
 
 - Test it out using `test.md` (see next section).
 
